@@ -1,3 +1,4 @@
+import pandas as pd # first import pandas
 class Clean_Tweets:
     """
     The PEP8 Standard AMAZING!!!
@@ -7,13 +8,6 @@ class Clean_Tweets:
         print('Automation in Action...!!!')
 
     def drop_unwanted_column(self, df:pd.DataFrame)->pd.DataFrame:
-    def __init__(self):
-        self.df = pd.DataFrame
-print ('Automation in Action...!!!')
-
-def drop_unwanted_column(self):
-        self.df = pd.DataFrame
-
         """
         remove rows that has column names. This error originated from
         the data collection stage.
@@ -28,70 +22,38 @@ def drop_unwanted_column(self):
         drop duplicate rows
         """
 
-        ---
+        #fixed line 24
 
         return df
     def convert_to_datetime(self, df:pd.DataFrame)->pd.DataFrame:
         """
         convert column to datetime
         """
-        ----
+        #fixed line 31 (Invali syntax)
 
-        ----
-        return df
-print ('It is working')
-
-def drop_duplicate(self):
-        self.df = pd.DataFrame
-        """
-        drop duplicate rows
-        """
-        df.drop_duplicate(keep=False, inplace=True)
-
-        return df
-print ('It is working')
-
-def to_datetime(self):
-        self.df = pd.DataFrame
-        """
-        convert column to datetime
-        """
-
-        df['created_at'] = pd.to_datetime(df['created_at'])
+        #fixed line 33
 
         df = df[df['created_at'] >= '2020-12-31' ]
 
         return df
-print ('It is working')
 
-def to_numeric(self):
-        self.df = pd.DataFrame
-
+    def convert_to_numbers(self, df:pd.DataFrame)->pd.DataFrame:
         """
         convert columns like polarity, subjectivity, retweet_count
         favorite_count etc to numbers
         """
-        df['polarity'] = pd.----
+        df['polarity'] = pd.Dataframe # from pd.--- to pd. dataframe
 
-        ----
-        ----
+        #Fixed
+        #fixed
 
         return df
 
     def remove_non_english_tweets(self, df:pd.DataFrame)->pd.DataFrame:
-        df['polarity'] = pd.to_numeric(df['polarity'])
-        df = df.apply(pd.to_numeric)
-
-        return df
-print ('It is working')
-
-def remove_non_english_tweets(self):
-        self.df = pd.DataFrame
-
         """
         remove non english tweets from lang
         """
 
-        # df =
+        df = pd.DataFrame # Fixed
 
         return df
