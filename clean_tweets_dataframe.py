@@ -1,51 +1,43 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> pr/28
 class Clean_Tweets:
     """
     The PEP8 Standard AMAZING!!!
     """
-<<<<<<< HEAD
     def __init__(self, df:pd.DataFrame):
         self.df = df
         print('Automation in Action...!!!')
-        
+
     def drop_unwanted_column(self, df:pd.DataFrame)->pd.DataFrame:
-=======
     def __init__(self):
         self.df = pd.DataFrame
 print ('Automation in Action...!!!')
-        
+
 def drop_unwanted_column(self):
         self.df = pd.DataFrame
->>>>>>> pr/28
+
         """
         remove rows that has column names. This error originated from
-        the data collection stage.  
+        the data collection stage.
         """
         unwanted_rows = df[df['retweet_count'] == 'retweet_count' ].index
         df.drop(unwanted_rows , inplace=True)
         df = df[df['polarity'] != 'polarity']
-<<<<<<< HEAD
-        
+
         return df
     def drop_duplicate(self, df:pd.DataFrame)->pd.DataFrame:
         """
         drop duplicate rows
         """
-        
+
         ---
-        
+
         return df
     def convert_to_datetime(self, df:pd.DataFrame)->pd.DataFrame:
         """
         convert column to datetime
         """
         ----
-        
+
         ----
-=======
         return df
 print ('It is working')
 
@@ -55,62 +47,51 @@ def drop_duplicate(self):
         drop duplicate rows
         """
         df.drop_duplicate(keep=False, inplace=True)
-        
+
         return df
-print ('It is working')        
+print ('It is working')
 
 def to_datetime(self):
         self.df = pd.DataFrame
         """
         convert column to datetime
         """
-       
+
         df['created_at'] = pd.to_datetime(df['created_at'])
->>>>>>> pr/28
-        
+
         df = df[df['created_at'] >= '2020-12-31' ]
-        
+
         return df
-<<<<<<< HEAD
-    
-    def convert_to_numbers(self, df:pd.DataFrame)->pd.DataFrame:
-=======
-print ('It is working')        
+print ('It is working')
 
 def to_numeric(self):
         self.df = pd.DataFrame
->>>>>>> pr/28
+
         """
         convert columns like polarity, subjectivity, retweet_count
         favorite_count etc to numbers
         """
-<<<<<<< HEAD
         df['polarity'] = pd.----
-        
+
         ----
         ----
-        
+
         return df
-    
+
     def remove_non_english_tweets(self, df:pd.DataFrame)->pd.DataFrame:
-=======
         df['polarity'] = pd.to_numeric(df['polarity'])
         df = df.apply(pd.to_numeric)
-        
+
         return df
-print ('It is working')        
-    
+print ('It is working')
+
 def remove_non_english_tweets(self):
         self.df = pd.DataFrame
->>>>>>> pr/28
+
         """
         remove non english tweets from lang
         """
-        
-<<<<<<< HEAD
-        df = ----
-=======
-        # df = 
->>>>>>> pr/28
-        
+
+        # df =
+
         return df
